@@ -2,8 +2,6 @@ import streamlit as st
 import pandas as pd
 
 # --- Your Streamlit code from earlier goes here ---
-st.title("Interactive Resume")
-st.write("Welcome to my interactive portfolio!")
 # --- Page Configuration ---
 st.set_page_config(page_title="Interactive Resume", page_icon="📄", layout="wide")
 

@@ -121,5 +121,3 @@ elif section == "🛠️ Technical Skills":
         st.bar_chart(chart_data)
     else:
         st.warning("No skills match the selected proficiency level. Try adjusting the slider!") 
-    df_edu = pd.DataFrame(edu_data)
-    st.table(df_edu)

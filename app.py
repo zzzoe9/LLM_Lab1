@@ -113,3 +113,11 @@ elif section == "🛠️ Technical Skills":
     df_skills = pd.DataFrame(skills_data)
     
     filtered_skills = df_skills[df_skills["Proficiency"] >= min_prof]
+    
+    # --- CHART REQUIREMENT ---
+    st.write("### Technical Proficiency Overview")
+    if not filtered_skills.empty:
+        chart_data = filtered_skills.set_index("Skill")
+        st.bar_chart(chart_data)
+    else:
+        st.warning("No skills match the selected proficiency level. Try adjusting the slider!")
